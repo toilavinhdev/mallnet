@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup Label="Hosting">
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0"/>
+    </ItemGroup>
+
+    <ItemGroup Label="API">
+        <PackageReference Include="Asp.Versioning.Http" Version="8.1.0"/>
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.15"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
+    </ItemGroup>
+
+    <ItemGroup Label="Other packages">
+        <PackageReference Include="MediatR" Version="13.0.0"/>
+    </ItemGroup>
+
+    <ItemGroup Label="References">
+        <ProjectReference Include="..\BuildingBlock.DataExtensions\BuildingBlock.DataExtensions.csproj"/>
+        <ProjectReference Include="..\BuildingBlock.Identity\BuildingBlock.Identity.csproj"/>
+        <ProjectReference Include="..\BuildingBlock.SeedWorks\BuildingBlock.SeedWorks.csproj"/>
+    </ItemGroup>
+
+</Project>

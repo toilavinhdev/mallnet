@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup Label="Hosting">
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup Label="MongoDB">
+        <PackageReference Include="MongoDB.Driver" Version="3.4.3"/>
+    </ItemGroup>
+
+    <ItemGroup Label="References">
+        <ProjectReference Include="..\BuildingBlock.DataExtensions\BuildingBlock.DataExtensions.csproj"/>
+        <ProjectReference Include="..\BuildingBlock.SeedWorks\BuildingBlock.SeedWorks.csproj"/>
+    </ItemGroup>
+
+</Project>
