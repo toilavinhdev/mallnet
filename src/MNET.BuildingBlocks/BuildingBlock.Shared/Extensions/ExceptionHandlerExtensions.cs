@@ -26,13 +26,8 @@ public static class ExceptionHandlerExtensions
                         _ => (int)HttpStatusCode.InternalServerError,
                     };
                     await httpContext.Response.WriteAsJsonAsync(
-                        new ApiResponse()
+                        new ApiResponse
                         {
-                            Code = exception switch
-                            {
-                                UnauthorizedAccessException => (int)HttpStatusCode.Unauthorized,
-                                _ => (int)HttpStatusCode.InternalServerError,
-                            },
                             Message = exception.Message
                         });
                 }

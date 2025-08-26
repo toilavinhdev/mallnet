@@ -2,8 +2,6 @@ namespace BuildingBlock.Shared.ValueModels;
 
 public class ApiResponse
 {
-    public required int Code { get; set; }
-    
     public string? Message { get; set; }
 }
 

@@ -18,4 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
+    <data name="PasswordNotMatch" xml:space="preserve">
+        <value>Mat khau khong chinh xac</value>
+    </data>
+    <data name="UserNotFound" xml:space="preserve">
+        <value>Nguoi dung khong ton tai</value>
+    </data>
+    <data name="PhoneOrEmailAlreadyExists" xml:space="preserve">
+        <value>So dien thoai hoac email da duoc su dung</value>
+    </data>
 </root>

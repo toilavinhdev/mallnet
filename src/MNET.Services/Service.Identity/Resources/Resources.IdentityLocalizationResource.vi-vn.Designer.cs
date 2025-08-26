@@ -44,5 +44,23 @@ namespace Service.Identity.Resources {
                 resourceCulture = value;
             }
         }
+        
+        internal static string PasswordNotMatch {
+            get {
+                return ResourceManager.GetString("PasswordNotMatch", resourceCulture);
+            }
+        }
+        
+        internal static string UserNotFound {
+            get {
+                return ResourceManager.GetString("UserNotFound", resourceCulture);
+            }
+        }
+        
+        internal static string PhoneOrEmailAlreadyExists {
+            get {
+                return ResourceManager.GetString("PhoneOrEmailAlreadyExists", resourceCulture);
+            }
+        }
     }
 }

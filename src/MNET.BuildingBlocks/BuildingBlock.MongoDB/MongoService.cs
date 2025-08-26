@@ -1,5 +1,7 @@
 using BuildingBlock.DataExtensions;
+using BuildingBlock.MongoDB.Abstractions;
 using BuildingBlock.MongoDB.Collections;
+using BuildingBlock.SeedWorks;
 using Microsoft.Extensions.Logging;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -7,7 +9,7 @@ using MongoDB.Driver.Core.Events;
 
 namespace BuildingBlock.MongoDB;
 
-public interface IMongoDbService
+public interface IMongoService
 {
     IMongoCollection<T> Collection<T>();
 
@@ -17,7 +19,7 @@ public interface IMongoDbService
         CancellationToken cancellationToken = default);
 }
 
-public class MongoService : IMongoDbService
+public class MongoService : IMongoService
 {
     private readonly MongoClient _client;
     
